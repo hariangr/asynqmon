@@ -1,4 +1,4 @@
-module github.com/hibiken/asynqmon
+module github.com/hariangr/asynqmon
 
 go 1.16
 
