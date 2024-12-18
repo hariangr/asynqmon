@@ -65,7 +65,7 @@ func isPrintable(data []byte) bool {
 	}
 	isAllSpace := true
 	for _, r := range string(data) {
-		if !unicode.IsPrint(r) {
+		if r != '\n' && !unicode.IsPrint(r) {
 			return false
 		}
 		if !unicode.IsSpace(r) {
