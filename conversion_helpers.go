@@ -2,7 +2,6 @@ package asynqmon
 
 import (
 	"time"
-	"unicode"
 	"unicode/utf8"
 
 	"github.com/hibiken/asynq"
