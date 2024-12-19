@@ -63,16 +63,18 @@ func isPrintable(data []byte) bool {
 	if !utf8.Valid(data) {
 		return false
 	}
-	isAllSpace := true
-	for _, r := range string(data) {
-		if r != '\n' && !unicode.IsPrint(r) {
-			return false
-		}
-		if !unicode.IsSpace(r) {
-			isAllSpace = false
-		}
-	}
-	return !isAllSpace
+	return true
+	
+	//isAllSpace := true
+	//for _, r := range string(data) {
+	//	if r != '\n' && !unicode.IsPrint(r) {
+	//		return false
+	//	}
+	//	if !unicode.IsSpace(r) {
+	//		isAllSpace = false
+	//	}
+	//}
+	//return !isAllSpace
 }
 
 type queueStateSnapshot struct {
